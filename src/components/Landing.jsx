@@ -1,12 +1,15 @@
-import {  Line, Util } from 'pts';
+import { Line, Util } from 'pts';
 import { QuickStartCanvas } from 'react-pts-canvas';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+
 import { BouncyBalls } from './BouncyBalls';
 import { Acidity } from './Acidity';
-import {ReverseSnow} from "./ReverseSnow";
-import {faGithubSquare, faLinkedin, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
+import { ReverseSnow } from './ReverseSnow';
 
 export const ConcentricRectangles = () => {
     return (
@@ -20,28 +23,30 @@ export const ConcentricRectangles = () => {
 };
 
 export const About = () => {
-    return(
+    return (
         <div className="about">
-            <div className="about-header"> {"{"}about{"}"} </div>
+            <div className="about-header">
+                {'{'}about{'}'}
+            </div>
 
             <div className="about-text">
-                Hello! My name is Rosaline Pyktel, and I’m a programmer based in Seattle. I’m a passionate and creative developer, and I want to help companies grow by using innovative technologies to create intuitive, reactive, and elegant user experiences.
-                While I love designing and building with front-end tools such as React and jQuery, I’m also comfortable with back-end tech such as NodeJS, MongoDB, and SQL.
-                In my spare time, you’ll find me writing scifi short stories and enjoying Seattle’s gloomy weather.
+                Hello! My name is Rosaline Pyktel, and I’m a programmer based in Seattle. I’m a passionate and creative
+                developer, and I want to help companies grow by using innovative technologies to create intuitive,
+                reactive, and elegant user experiences. While I love designing and building with front-end tools such as
+                React and jQuery, I’m also comfortable with back-end tech such as NodeJS, MongoDB, and SQL. In my spare
+                time, you’ll find me writing scifi short stories and enjoying Seattle’s gloomy weather.
             </div>
         </div>
     );
 };
 
 export const Contact = () => {
-    return(
+    return (
         <div className="contact">
             <div>
                 <div className="contact-header unselectable">
                     .contact
-                    <span className="contact-curlyBracketTop">
-                         {"{"}
-                    </span>
+                    <span className="contact-curlyBracketTop">{'{'}</span>
                 </div>
 
                 <div className="contact-table">
@@ -61,9 +66,7 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                <div className="contact-header contact-curlyBracketBottom unselectable">
-                    {"}"}
-                </div>
+                <div className="contact-header contact-curlyBracketBottom unselectable">{'}'}</div>
             </div>
         </div>
     );
@@ -76,9 +79,9 @@ export const Landing = () => {
                 <BouncyBalls />
             </div>
 
-            <Contact/>
+            <Contact />
 
-            <div className="bottom"/>
+            <div className="bottom" />
         </>
     );
 };
