@@ -3,6 +3,10 @@ import { QuickStartCanvas } from 'react-pts-canvas';
 
 export const BouncyBalls = () => {
     let world;
+    const colors = ['#173f5f', '#20639b', '#3caea3', '#f6d55c', '#ed553b']; // todo: decide on palette
+    const colors1 = ['#f38181', '#fce38a', '#eaffd0', '#95e1d3'];
+    const colors2 = ['#012F46', '#842C2A', '#C23D2A', '#EA8A44', '#B19490']
+    const backColor = '#fff';
 
     const onStart = (bound, space) => {
         world = new World(space.innerBound, 1, 0);
@@ -18,13 +22,10 @@ export const BouncyBalls = () => {
     };
 
     const onAnimate = (space, form, time, ftime) => {
-        const colors = ['#173f5f', '#20639b', '#3caea3', '#f6d55c', '#ed553b']; // todo: decide on palette
-        const colors1 = ['#f38181', '#fce38a', '#eaffd0', '#95e1d3'];
-
         if (world) {
             world.drawParticles((p, i) => {
-                const color = i === 0 ? '#fff' : colors[i % colors.length];
-                form.fillOnly(color).point(p, p.radius, 'circle');
+                const color = i === 0 ? backColor : colors[i % colors.length];
+                form.fillOnly(color).point(p, p.radius, 'square');
             });
 
             for (let i = 0; i < 100; i++) {
@@ -48,19 +49,19 @@ export const BouncyBalls = () => {
 
     const styling = { height: '100%', width: '100%' };
     return (
-        <>
+        <div className="header">
             <QuickStartCanvas
                 onStart={(bound, space) => onStart(bound, space)}
                 onAnimate={(space, form, time, ftime) => onAnimate(space, form, time, ftime)}
                 onAction={(space, form, type, px, py, evt) => onAction(space, form, type, px, py, evt)}
                 onResize={(space, form, size, evt) => onResize(space, form, size, evt)}
                 resize={true}
-                background={'#fff'}
+                background={backColor}
                 style={styling}
                 canvasStyle={styling}
             />
             <div className="header-text">Rosaline P</div>
             <div className="header-subText">full stack web developer</div>
-        </>
+        </div>
     );
 };

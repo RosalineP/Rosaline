@@ -40,15 +40,51 @@ body,html {
     transform: translateX(-50%) translateY(130%);
 }
 
-.about-header {
+.about {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-computer {
+    flex-grow: 2;
+    max-height: 90vh !important;
+}
+.about-exposition {
+    min-width: 400px;
+    width: 49vw;
+    margin-right: 8vw;
+    display: flex;
+    align-items: center;
+}
+
+.about-closure {
+    display: flex;
+    align-items: center;
     font-family: Bookman Old Style,monospace;
-    font-size: 25px;
     font-weight: bold;
     color: #173f5f;
 }
 
+.about-closure-text {
+    font-size: 29px;
+    margin-left: 10px;
+}
+
+.about-angleBracket {
+    font-size: 40px;
+}
+
+.about-angleBracket-end {
+    margin-left: 12px;
+}
 .about-text {
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    margin-left: 5vw;
     font-family: Bookman Old Style,monospace;
+    font-size: 19px;
     color: #264653;
 }
 
@@ -112,6 +148,10 @@ body,html {
 
 .bottom {
     height: 10vh;
+}
+
+.credits {
+    font-size: 10px;
 }
 
 .unselectable {
