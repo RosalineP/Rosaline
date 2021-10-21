@@ -1,4 +1,4 @@
-import {Bound, Circle, Const, Create, Group, Line, Num, Particle, Pt, Rectangle, Util, World} from 'pts';
+import { Bound, Circle, Const, Create, Group, Line, Num, Particle, Pt, Rectangle, Util, World } from 'pts';
 import { QuickStartCanvas } from 'react-pts-canvas';
 
 export const ReverseSnow = () => {

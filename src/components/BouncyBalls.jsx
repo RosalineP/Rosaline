@@ -5,7 +5,7 @@ export const BouncyBalls = () => {
     let world;
     const colors = ['#173f5f', '#20639b', '#3caea3', '#f6d55c', '#ed553b']; // todo: decide on palette
     const colors1 = ['#f38181', '#fce38a', '#eaffd0', '#95e1d3'];
-    const colors2 = ['#012F46', '#842C2A', '#C23D2A', '#EA8A44', '#B19490']
+    const colors2 = ['#012F46', '#842C2A', '#C23D2A', '#EA8A44', '#B19490'];
     const backColor = '#fff';
 
     const onStart = (bound, space) => {
