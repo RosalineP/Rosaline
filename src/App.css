@@ -8,13 +8,13 @@ body,html {
 
 .header {
     height: 100vh;
-    width: 100vw;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-size: cover;
+    margin-bottom: 10vh;
 }
 
 .header-text {
@@ -41,7 +41,6 @@ body,html {
 }
 
 .about {
-    margin-top: 15vh;
     margin-bottom: 15vh;
     display: flex;
     justify-content: space-between;
