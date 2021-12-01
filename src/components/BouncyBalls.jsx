@@ -10,7 +10,7 @@ export const BouncyBalls = () => {
 
     const onStart = (bound, space) => {
         world = new World(space.innerBound, 1, 0);
-        const pts = Create.distributeRandom(space.innerBound, 100);
+        const pts = Create.distributeRandom(space.innerBound, 80);
 
         for (let i = 0, len = pts.length; i < len; i++) {
             const p = new Particle(pts[i]).size(i === 0 ? 30 : 9 + (Math.random() * space.size.x) / 28);
@@ -28,7 +28,7 @@ export const BouncyBalls = () => {
                 form.fillOnly(color).point(p, p.radius, 'square');
             });
 
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 80; i++) {
                 world.particle(i).addForce(space.center.$subtract(world.particle(i).previous).divide(8));
             }
             world.update(ftime);
