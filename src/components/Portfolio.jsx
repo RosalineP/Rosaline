@@ -1,6 +1,8 @@
 import fud from './fud.png';
 
 export const Portfolio = () => {
+    const link = 'https://example-node-api-rosalinep.herokuapp.com/';
+
     return(
         <div className="personalProj">
             <div className="personalProj-header">
@@ -10,12 +12,12 @@ export const Portfolio = () => {
             </div>
 
             <div className="personalProj-fud">
-                <div >
+                <a href={link}>
                     <img src={fud} className="personalProj-pic" alt="fud" />
-                </div>
+                </a>
                 <div className="personalProj-text">
                     <p>
-                        FüdPlan is a demo webapp that aims to provide an integrated suite of three practical food-related functionality areas: inventory management, recipe data organization, and shopping-cart operations. Keep track of expiration dates to minimize spoilage, see at a glance what recipes you can make with your current inventory, auto-add ingredients for a recipe you can almost make to your shopping cart, and more. Feel free to use the site as a sandbox to check out the feature set!
+                        FüdPlan is a demo webapp that aims to provide an integrated suite of three practical food-related functionality areas: inventory management, recipe data organization, and shopping-cart operations. Keep track of expiration dates to minimize spoilage, see at a glance what recipes you can make with your current inventory, auto-add ingredients for a recipe you can almost make to your shopping cart, and more. Feel free to use the <a href={link}><u>site</u></a> as a sandbox to check out the feature set!
                     </p>
 
                     <p>

@@ -6,6 +6,11 @@ body,html {
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .header {
     height: 100vh;
     color: white;
