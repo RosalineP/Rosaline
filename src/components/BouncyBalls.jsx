@@ -10,6 +10,7 @@ export const BouncyBalls = () => {
 
     const onStart = (bound, space) => {
         world = new World(space.innerBound, 1, 0);
+        world.friction = 0.99;
         const pts = Create.distributeRandom(space.innerBound, 75);
 
         for (let i = 0, len = pts.length; i < len; i++) {
