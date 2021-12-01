@@ -49,6 +49,7 @@ body,html {
 .about-computer {
     flex-grow: 2;
     max-height: 90vh !important;
+    margin-left: 2vw;
 }
 .about-exposition {
     min-width: 400px;
@@ -71,6 +72,13 @@ body,html {
     margin-left: 10px;
 }
 
+.about-closure-text-end {
+    font-size: 29px;
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
 .about-angleBracket {
     font-size: 40px;
 }
@@ -85,6 +93,55 @@ body,html {
     font-family: Bookman Old Style,monospace;
     font-size: 19px;
     color: #264653;
+}
+
+.personalProj {
+    font-family: Bookman Old Style,monospace;
+    color: #173f5f;
+    margin-bottom: 13vh;
+}
+
+.personalProj-header {
+    margin-left: 5vw;
+}
+
+.personalProj-title {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.personalProj-fnStart {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.personalProj-curlyBracketTop {
+    font-size: 50px;
+    font-weight: normal;
+}
+.personalProj-fud {
+    display: flex;
+    margin-top: 5em;
+}
+
+.personalProj-pic {
+    width: 30em;
+    height: auto;
+    margin-right: 4em;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+.personalProj-text {
+    /*margin-bottom: 3vh;*/
+    margin-right: 5em;
+    font-size: 19px;
+}
+
+.personalProj-curlyBracketBottom {
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 5vw;
 }
 
 .contact {

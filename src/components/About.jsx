@@ -54,9 +54,9 @@ export const About = () => {
                     </div>
 
                     <div className="about-closure">
-                        <span className="about-angleBracket"> {'<'} </span>
-                        <span className="about-closure-text"> about </span>
-                        <span className="about-angleBracket"> {'/>'} </span>
+                        <span className="about-angleBracket"> {'</'} </span>
+                        <span className="about-closure-text-end"> about </span>
+                        <span className="about-angleBracket"> {'>'} </span>
                     </div>
                 </div>
             </div>
